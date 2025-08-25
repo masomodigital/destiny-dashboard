@@ -3,80 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DESTNY: System Dashboard</title>
+  <title>Student Management System</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-    .button-container {
+      background: #f9f9f9;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      margin-top: 30px;
-      padding: 20px;
+      align-items: flex-start;
+      min-height: 100vh;
     }
-    .button-container a {
-      width: 100%;
-      margin-bottom: 15px;
-      text-decoration: none;
-      border-radius: 5px;
-      padding: 15px;
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-      color: white;
-      display: block;
-      transition: all 0.3s ease;
-    }
-    .button-container a:hover {
-      opacity: 0.8;
-    }
-    .green-btn { background-color: #4CAF50; }
-    .red-btn { background-color: #f44336; }
-    .black-btn { background-color: #333; }
-    .blue-btn { background-color: #008CBA; }
-    .yellow-btn { background-color: #FF9800; }
+
     .container {
-      max-width: 600px;
-      margin: auto;
+      width: 100%;
+      max-width: 400px;
+      padding: 15px;
     }
+
+    h1 {
+      text-align: center;
+      background: #333;
+      color: white;
+      margin: 0 0 10px 0;
+      padding: 15px;
+      font-size: 22px;
+      border-radius: 8px;
+    }
+
+    .icon {
+      display: block;
+      margin: 10px auto 10px auto;
+      max-width: 100px;
+      height: auto;
+    }
+
+    .developer-text {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: opacity 0.3s;
+    }
+
+    .red { background-color: #e74c3c; }
+    .green { background-color: #27ae60; }
+    .blue { background-color: #2980b9; }
+    .black { background-color: #2c3e50; }
+
+    .button:hover {
+      opacity: 0.85;
+    }
+    .watch-video-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.watch-video-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.02);
+}
+
+.video-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>DESTINY SHAPERS EDUCATION CENTRE</h1>
 
-  <header>
-    <h1>DESTINY: System Dashboard</h1>
-  </header>
+    <!-- Icon image below heading -->
+    <img src="https://i.imgur.com/tYRbupF.jpeg" alt="System Icon" class="icon">
 
-  <div class="button-container">
-    <a href="https://masomodigital.github.io/addstudent/" class="green-btn" target="_blank">ADMIT NEW PUPIL</a>
-    <a href="https://script.google.com/a/macros/sherton.website/s/AKfycbx7LmUBhNmG_cTGEFTWG_RDnrICBXNNCMEXUeXeo0WSjsKnz5htUdG3b1PGMpulESg/exec" class="red-btn" target="_blank">RECEIVE FEE AND CHECK BALANCE</a>
-    <a href="https://script.google.com/a/macros/sherton.website/s/AKfycbw0AhzY4EPPS5Lw-XfVF86xqpKwvGxpesWakU-W2ghq7tdCsU4-Z86C6pR8X9NULqze/exec" class="black-btn" target="_blank">UPDATE PUPIL RECORD</a>
-    <a href="https://script.google.com/a/macros/sherton.website/s/AKfycby-sFVKh0ej96wFOxx-kcJQb-5jqiuoLd6HkFLB5_AsqTVPzCP4ZHjBC9X-p_-cGly4/exec" class="blue-btn" target="_blank">DELETE PUPIL RECORD</a>
-    <a href="https://script.google.com/macros/s/AKfycbw8Jfj3MxBX7JWhGwJUaNl8rC3Q7nN1qtqOzm3boglV6MYIIEGeuLnkRiMaww7LOY-ohg/exec" class="red-btn" target="_blank">PUPILS RECORD PER GRADE</a>
-    <a href="https://script.google.com/macros/s/AKfycbwONMS3P7Uk1Vd8F2X3x2biCOvsCFjM0uTFVxgkoDB_OVJWddRkOhHrCVeOOe_RlUeu/exec" class="green-btn" target="_blank">FEES STRUCTURE</a>
-    <a href="https://script.google.com/macros/s/AKfycby6Fqzb1SuSjeRbYbse5lTfmB3o2e61anl5dRwXFagUZitDqOmgAtqtjpglh2epSLUk4g/exec" class="black-btn" target="_blank">FEES BALANCE PER CLASS</a>
-    <a href="https://script.google.com/macros/s/AKfycbyx4t_S5pSDeRjc93W5jYog0BsD7LxehKjccG1-tSsZeTw4pI9pbf9dH4jsVao00cZbOA/exec" class="blue-btn" target="_blank">COLLECTIONS AND BALANCES REPORT</a>
-    <a href="https://script.google.com/a/macros/sherton.website/s/AKfycbxV_WWFLHxgnRfVDvCENC00XmNpZ5veF1sW9yeGlEOs3cCJsDbn2cWJCQkOz-ZuASjC6w/exec" class="black-btn" target="_blank">PRINT LETTERS</a>
-    <a href="https://script.google.com/macros/s/AKfycbxQb-LoCreW9Z9Bh5TiiEE3w-BZQTUbf7H_rUmQYU8p81Kp_MYDJc7nPXsV1lslvG4qTg/exec" class="red-btn" target="_blank">CORRECT FEE ERROR</a>
-    <a href="https://script.google.com/macros/s/AKfycbxDAcQ5MBwBCM9aPx7jW5VH5RTRvTS1nf7s6Gb_3wyutp3SJGmadFxyQF3JWKKbuVns/exec" class="black-btn" target="_blank">SEND SMS TO ALL PARENTS</a>
-    <a href="https://script.google.com/macros/s/AKfycbz9b2865b1_bZeVq-XHE0VOjog53LqGEh7aqYK3ky9NegtKd71ByJy5ydCgEwnVuQ7oqA/exec" class="green-btn" target="_blank">SEND SMS FEE BALANCES</a>
-    <a href="https://script.google.com/macros/s/AKfycbxzyLeMOwkxEGjDGdWMIeIBugEsyxEGNG3nZbNm1J7lgcMLjME_QG7Mz2a6JVPQA67Rnw/exec" class="blue-btn" target="_blank">CHECK BULK SMS BALANCE</a>
-  </div>
+    <!-- Developer text below icon -->
+    <div class="developer-text">
+      Developed by Masomo Digital Library. Tel: 0715399449
+    </div>
+    <a href="https://masomodigital.github.io/addstudent/" class="button green">ADD NEW STUDENT</a>
+    <a href="https://script.google.com/macros/s/AKfycbwGRDYZVqySuW7v444-wpN6PeXmv49yx4I4yGK7VSRbc2uqpQiRsHMR-1i2X687I-tLLA/exec" class="button red">UPDATE STUDENT RECORD</a>
+    <a href="https://script.google.com/macros/s/AKfycbz6GQIH6SqG5JYR5m1Bq1ThtsnenovLRoJ0VUuBtdHzva4VmjfNKZOeUWgzlzjY5IhF/exec" class="button blue">RECEIVE FEE / CHECK BALANCE</a>
+    <a href="https://script.google.com/macros/s/AKfycbwik05yJaFqffQBMg3OP5eKPzuxw3XHgW93A781MfPCDXghlQ7SFXfnEiw-MQNtQLE/exec" class="button black">FEE BALANCE PER CLASS</a>
+    <a href="https://script.google.com/macros/s/AKfycbxWMu-gulVvFcCHosFCJyh-MZv-iltGDZUbw4vwNbK_BiFTSjZ8GD2EkDKCv_2lGksYXA/exec" class="button red">TOTAL EXPECTED COLLECTIONS</a>
+    <a href="https://script.google.com/macros/s/AKfycbyIYic9Qv08INYbEpBM6cW6piRk4qDdJ-RU4u9ZYL_tKek5gXTl6ByJt8b1tbsnL-eBLw/exec" class="button green">STUDENT LIST PER GRADE</a>
+    <a href="https://masomodigital.github.io/feestructure-destiny/" class="button blue">UPDATE FEE STRUCTURE</a>
+    <a href="https://script.google.com/macros/s/AKfycbxySBsfzMhsbaYGqyEP_laWy1BSXrWeqeWuC07SnN4GBXsqI_DszjXw_RyI4JMZB0HA/exec" class="button black">DELETE STUDENT</a>
+    <a href="https://script.google.com/macros/s/AKfycbwr3JdMeIm1T3iCu9-5UVi8y0Y36lFwcYH-NTY7UwU5fXNcf8pS2RxU6JEWJbEyzNCpPg/exec" class="button red">CREATE LETTERS</a>
+    <a href="https://script.google.com/macros/s/AKfycbyjKON3dPNPRZQ1DIWIx_H5dbz0a4yLCRGmzxg6K--WUSgnBgofYL98g5mSyZ4peVMo/exec" class="button green">PRINT LATE RECEIPTS</a>
+    <a href="https://script.google.com/macros/s/AKfycby7bIkElRqvFGQ7tAZ4kEmbH3NvfkUEbLvL2cZ2hFLz6-JnF3pD5hgEk60QpkbGfPESOg/exec" class="button black">STUDENT FEE SUMMARY</a>
+    <a href="https://masomodigital.github.io/payment-history-nasta/" class="button red">STUDENT PAYMENT HISTORY</a>
+    <a href="https://script.google.com/macros/s/AKfycbwWpSuC-wJctbmt3rZ5Ean1Y69WGg6s_7myU5jhjFKIr9fN3DPpna8r9at6B69j-5bGHw/exec" class="button blue">CORRECT PAYMENT</a>
+    <a href="https://script.google.com/macros/s/AKfycbz7IRFDoo8Bb3Buq-tYSBlTTEH-SHJOrjDyvrsv3X5VsuVxARC3IrH-UX4nS0w6iCAv7w/exec" class="button black">UPDATE TERM</a>
+    <a href="https://script.google.com/macros/s/AKfycbxDAcQ5MBwBCM9aPx7jW5VH5RTRvTS1nf7s6Gb_3wyutp3SJGmadFxyQF3JWKKbuVns/exec" class="button blue">SEND SMS TO PARENTS</a>
+    <a href="https://script.google.com/macros/s/AKfycbzXSkYxFUw-E-UDPwjetY0jcusbFhSyvyyhygtjo1kLgeEG5q6kGUM7HOtZt3yOudQKlg/exec" class="button black">DISCOUNTS</a>
+    <a href="https://script.google.com/macros/s/AKfycbx1JPDtCDK1uu-OdRBdSJ3JvX0jJSWYmLKGTEGME84y7GG_lXRgJBigLzDAVoyI5REbuA/exec" class="button red">VIEW DISCOUNTS</a>
+    <a href="https://script.google.com/macros/s/AKfycbwwMy1iYsuYCk2HzFyV97BPKNQakjZ0bC_r9xWWCxG8HwxE9-muVMI5vCGfq8br7u5R/exec" class="button blue">SPECIAL FEES ALLOCATIONS</a>
+    <a href="https://script.google.com/macros/s/AKfycbzwLkn6GG_FZjGJyQJU85Rhz1gla8_6KvIGCSZiXjDcSPtjf_FjxLtK9JlpbOzYUIaxvA/exec" class="button green">CHECK SPECIAL FEES ALLOCATION</a>
+    <a href="https://script.google.com/macros/s/AKfycbz9b2865b1_bZeVq-XHE0VOjog53LqGEh7aqYK3ky9NegtKd71ByJy5ydCgEwnVuQ7oqA/exec" class="button black">SEND SMS FEE REMINDERS</a>
+    <a href="https://script.google.com/macros/s/AKfycbxzyLeMOwkxEGjDGdWMIeIBugEsyxEGNG3nZbNm1J7lgcMLjME_QG7Mz2a6JVPQA67Rnw/exec" class="button red">CHECK BULK SMS BALANCE</a>
+        <p style="text-align: center; font-size: 15px; color: #333; margin-top: 25px;">
+      Below is video to help you understand how the system works. Click the button to watch the video.
+    </p>
 
+    <a href="https://screenapp.io/app/#/shared/4wNQZsY7jZ" target="_blank" class="watch-video-button">
+      <svg xmlns="http://www.w3.org/2000/svg" class="video-icon" viewBox="0 0 24 24" fill="white">
+        <circle cx="12" cy="12" r="10" fill="#e74c3c"/>
+        <polygon points="10,8 16,12 10,16" fill="white"/>
+      </svg>
+      Click here to watch video
+    </a>
+</div>
 </body>
 </html>
